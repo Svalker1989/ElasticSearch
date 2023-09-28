@@ -30,14 +30,14 @@ P.S. Для себя
 Приведите скриншот интерфейса Kibana, на котором видны логи Nginx.  
 ![](https://github.com/Svalker1989/ElasticSearch/blob/main/Z3.PNG)  
 P.S. Для себя  
-Файл конфигурации, который берет файл лога и отправляет на порт эластика с кастомным именем индекса:  
+Файл конфигурации logstash, который берет файл лога и отправляет на порт эластика с кастомным именем индекса:  
 [logstash.conf](https://github.com/Svalker1989/ElasticSearch/blob/main/logstash.conf)  
 ### Задание 4. Filebeat  
 Установите и запустите Filebeat. Переключите поставку логов Nginx с Logstash на Filebeat.  
 Приведите скриншот интерфейса Kibana, на котором видны логи Nginx, которые были отправлены через Filebeat.  
 ![](https://github.com/Svalker1989/ElasticSearch/blob/main/Z4.PNG)  
 P.S. Для себя  
-Файл конфигурации, который слушает всё что к нему прилетает на порт 5044 и отправляет на порт эластика с кастомным именем индекса:  
+Файл конфигурации logstash, который слушает всё что к нему прилетает на порт 5044 и отправляет на порт эластика с кастомным именем индекса:  
 [logstash_FB.conf](https://github.com/Svalker1989/ElasticSearch/blob/main/logstash_FB.conf)  
 Для запуска filebeat со своим конфигурационным yml файлом и выводом лога в командню строку `filebeat -e -c *yml name*`  
 Конфиг filebeat для отправки в логстэш лога nginx  
