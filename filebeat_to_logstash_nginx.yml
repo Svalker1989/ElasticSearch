@@ -1,0 +1,11 @@
+filebeat.inputs:
+  - type: filestream
+    id: filebeat-to-logstash-nginx
+    enabled: true
+    paths:
+      - /var/log/nginx/access.log
+processors:
+  - drop_fields:
+      fields: ["beat", "input_type", "prospector", "input", "host", "agent","ecs"]
+output.logstash: 
+  hosts: ["localhost:5044"]

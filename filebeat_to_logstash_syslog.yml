@@ -1,0 +1,8 @@
+filebeat.inputs:
+  - type: filestream
+    id: filebeat-to-logstash-syslog
+    enabled: true
+    paths:
+      - /var/log/syslog
+output.logstash: 
+  hosts: ["localhost:5044"]
