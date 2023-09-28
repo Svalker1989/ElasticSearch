@@ -12,9 +12,9 @@ P.S. Для себя
   "query": {  
     "match_all": {}  
   }  
-}`  
+}`   
 Получить список индексов:  
-`GET _cat/indices`  
+`GET _cat/indices`   
 Удалить индекс по имени:  
 `DELETE *index_name*`  
 Работает на порту 9200  
